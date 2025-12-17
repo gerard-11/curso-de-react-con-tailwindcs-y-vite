@@ -1,13 +1,12 @@
-function Index() {
+import Layout from "../../components/Layout/index.jsx";
+
+function MyOrders() {
 
     return (
-        <>
-            <div className='bg-red-500'>
-                My Orders
-            </div>
-
-        </>
+        <Layout>
+            My orders
+        </Layout>
     )
 }
 
-export default Index
+export default MyOrders

@@ -7,6 +7,8 @@ import NotFound from '../NotFound/index.jsx'
 import {useRoutes, BrowserRouter} from 'react-router-dom'
 import '../../App.css'
 import {NavBar} from "../../components/NavBar/index.jsx";
+import {ShoppingCartProvider} from '../../context/index.jsx'
+import CheckOutSideMenu from "../../components/CheckOutSideMenu/index.jsx";
 
 const AppRoutes=()=>{
     let routes= useRoutes([
@@ -24,10 +26,14 @@ const AppRoutes=()=>{
 function App() {
 
   return (
-   <BrowserRouter>
-       <AppRoutes />
-       <NavBar/>
-   </BrowserRouter>
+      <ShoppingCartProvider>
+          <BrowserRouter>
+              <AppRoutes />
+              <NavBar/>
+              <CheckOutSideMenu/>
+          </BrowserRouter>
+      </ShoppingCartProvider>
+
   )
 }
 

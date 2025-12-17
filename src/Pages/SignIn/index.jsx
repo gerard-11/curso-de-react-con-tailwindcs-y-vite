@@ -1,12 +1,11 @@
+import Layout from "../../components/Layout/index.jsx";
+
 function SingIn() {
 
     return (
-        <>
-            <div className='bg-red-500'>
-              SignIn
-            </div>
-
-        </>
+        <Layout>
+            Sign In
+        </Layout>
     )
 }
 

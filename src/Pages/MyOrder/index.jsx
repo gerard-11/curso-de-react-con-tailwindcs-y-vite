@@ -1,12 +1,11 @@
+import Layout from "../../components/Layout/index.jsx";
+
 function Index() {
 
     return (
-        <>
-            <div className='bg-red-500'>
-             My Order
-            </div>
-
-        </>
+        <Layout>
+            My Order
+        </Layout>
     )
 }
 
