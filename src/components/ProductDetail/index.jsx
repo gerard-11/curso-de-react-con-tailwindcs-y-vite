@@ -6,7 +6,7 @@ import {ShoppingCartContext} from "../../context/index.jsx";
 
 const ProductDetail = () => {
     const context=useContext(ShoppingCartContext)
-    console.log(context.productToShow)
+
     return (
         <aside className={`${context.isProductDetailOpen ? 'flex' : 'hidden'} product-detail flex flex-col fixed right-0 border border-black bg-white rounded-lg`}>
             <div className='flex justify-between items-center p-6'>
@@ -17,7 +17,6 @@ const ProductDetail = () => {
                         onClick={context.closeDetailProduct}
                     />
                 </div>
-
             </div>
             <figure className='p-2'>
                 <img

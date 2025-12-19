@@ -18,6 +18,9 @@ export const ShoppingCartProvider=({children})=> {
     //shopping cart . add products to cart
     const [cartProducts,setCartProducts]=useState([])
 
+    //shopping cart order
+    const [order, setOrder]=useState([])
+
 
 
     return (
@@ -33,7 +36,9 @@ export const ShoppingCartProvider=({children})=> {
             setCartProducts,
             openCheckoutSideMenu,
             closeCheckoutSideMenu,
-            isCheckoutSideMenuOpen
+            isCheckoutSideMenuOpen,
+            order,
+            setOrder,
 
         }}>
         {children}

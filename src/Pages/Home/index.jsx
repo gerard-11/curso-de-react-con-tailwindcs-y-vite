@@ -2,6 +2,7 @@ import Layout from '../../components/Layout/index.jsx'
 import Card from '../../components/Card/index.jsx'
 import ProductDetail  from '../../components/ProductDetail/index.jsx'
 import {useEffect, useState} from "react";
+
 const Home=()=> {
     const [items,setItems]=useState(null)
 
@@ -10,6 +11,7 @@ const Home=()=> {
             .then(res=>res.json())
             .then(data=>setItems(data))
     },[])
+    console.log(items)
     return (
         <>
             <Layout>
