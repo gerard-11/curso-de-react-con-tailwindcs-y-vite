@@ -12,8 +12,7 @@ const NavBar=()=>{
                 <li className='font-semibold'>
                     <NavLink
                         to='/'
-                        className={({isActive})=>
-                            isActive? activeStyle: undefined}>
+                        onClick={()=>context.setFilteredByCategory(null)}>
                         Shop
                     </NavLink>
                 </li>
