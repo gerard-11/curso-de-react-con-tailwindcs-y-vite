@@ -25,6 +25,8 @@ const CheckOutSideMenu = () => {
         context.setCartProducts([])
         context.setCount(0)
        context.closeCheckoutSideMenu()
+       context.setFilteredByCategory(null)
+       context.setSearchByTitle(null)
    }
     return (
         <aside className={`${context.isCheckoutSideMenuOpen ? 'flex' : 'hidden'} checkout-side-menu flex flex-col fixed right-0 h-screen border border-black bg-white rounded-lg`}>
