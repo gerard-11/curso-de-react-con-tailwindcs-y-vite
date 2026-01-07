@@ -14,6 +14,7 @@ export const ShoppingCartProvider=({children})=> {
     const [searchByCategory,setSearchByCategory]=useState(null)
     //get products by title
     const [searchByTitle,setSearchByTitle]=useState(null)
+
     useEffect(()=>{
         fetch('https://api.escuelajs.co/api/v1/products')
             .then(res=>res.json())
